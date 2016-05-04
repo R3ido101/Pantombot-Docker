@@ -8,7 +8,7 @@ RUN apt-get update
 
 #Install all the packages needed to run PhantomBot
 
-RUN apt-get install -y unzip default-jdk
+RUN apt-get install -y unzip default-jdk wget
 
 # Download phantombot
 
