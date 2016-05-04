@@ -9,7 +9,7 @@ RUN apt-get update
 RUN apt-get install -y unzip default-jdk wget sudo
 
 #Add user for bot acct
-RUN useradd -ms /bin/bash newuser
+RUN useradd -ms /bin/bash phantombot
 RUN su phantombot
 # Download phantombot
 
