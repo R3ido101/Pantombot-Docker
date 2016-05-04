@@ -9,14 +9,13 @@ RUN apt-get update
 RUN apt-get install -y unzip default-jdk wget sudo
 
 #Add user for bot acct
-RUN adduser phantombot
+RUN useradd -ms /bin/bash newuser
 RUN su phantombot
-RUN cd /home/phantombot
 # Download phantombot
 
 RUN wget https://github.com/PhantomBot/PhantomBot/releases/download/v2.0.7.2/PhantomBot-2.0.7.2.zip
 RUN unzip PhantomBot-2.0.7.2.zip /home/phantombot
-
+RUN cd /home/phantombot
 # Expose Port for bot to work.
 
 EXPOSE 25000
