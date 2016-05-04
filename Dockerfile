@@ -14,7 +14,7 @@ RUN su phantombot
 # Download phantombot
 
 RUN wget https://github.com/PhantomBot/PhantomBot/releases/download/v2.0.7.2/PhantomBot-2.0.7.2.zip
-RUN unzip PhantomBot-2.0.7.2.zip /home/phantombot
+RUN unzip PhantomBot-2.0.7.2.zip
 # Expose Port for bot to work.
 
 EXPOSE 25000
