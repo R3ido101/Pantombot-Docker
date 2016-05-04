@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:latest
 
 MAINTAINER Oliver_Reid_@hotmail.co.uk
 
