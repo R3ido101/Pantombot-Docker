@@ -6,7 +6,7 @@ MAINTAINER Oliver_Reid_@hotmail.co.uk
 RUN apt-get update
 
 #Install all the packages needed to run PhantomBot
-RUN apt-get install -y unzip default-jdk wget sudo
+RUN apt-get install -y unzip net-tools default-jdk wget sudo
 
 #Add user for bot acct
 RUN useradd -ms /bin/bash phantombot
